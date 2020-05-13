@@ -14,3 +14,11 @@ console.log("== circle.area(5):", circle.area(5));
 
 
 var figlet = require('figlet');
+/*
+ * (err, data) => { console.log(data); }
+ */
+figlet("Hello CS 290!!", function (err, data) {
+  if (!err) {
+    console.log(data);
+  }
+});
